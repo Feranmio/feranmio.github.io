@@ -1,0 +1,52 @@
+
+body {
+	overflow:hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+div.moveletter {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+div.moveletter:first-of-type {    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+  animation: showup 7s infinite;
+}
+
+div.moveletter:last-of-type {
+  width:0px;
+  animation: reveal 7s infinite;
+}
+
+div.moveletter:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:130px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:130px;}
+}
