@@ -9112,7 +9112,7 @@ textarea.form-control {
 	.imagecon{
 	background-position: center; 
 	background-repeat: no-repeat; 
-	height: 400px; 
+	height: 500px; 
 	background-size: cover; 
 	margin: 3% 5% 0 5%;
 	}	
@@ -9125,12 +9125,23 @@ textarea.form-control {
     box-shadow: 3px 6px 10px #00000099;
 	}
 	
-	@media (max-width: 576px){
+	@media (max-width: 640px){
 		.imagecon{
 			background-position: center; 
 			background-repeat: no-repeat; 
-			height: 150px; 
+			height: 200px; 
 			background-size: contain; 
 			margin: 3% 5% 0 5%;
 	}
 	}
+	
+	@media only screen and (min-width: 641px) and (max-width: 930px) {	
+		.imagecon{
+			background-position: left; 
+			background-repeat: no-repeat; 
+			height: 500px; 
+			background-size: contain; 
+			margin: 3% 5% 0 5%;
+	}
+	}
+	
