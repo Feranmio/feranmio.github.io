@@ -7665,10 +7665,11 @@ textarea.form-control {
   .featured-donate img, .featured-section img {
    border: 1px solid #fff;
    border-radius: 10px; 
-   transition: all 0.8s ease-in-out 0s;}  
-   .featured-donate:hover img, .featured-section:hover img { /*custom */
-   transform: scale(1.2);
-   }
+/*    transition: all 0.8s ease-in-out 0s; */
+   }  
+/*    .featured-donate:hover img, .featured-section:hover img { custom */
+/*    transform: scale(1.2); */
+/*    } */
    
   .featured-donate h2, .featured-section h2 {
     color: #fff; }
