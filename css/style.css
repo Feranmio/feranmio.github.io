@@ -8750,7 +8750,9 @@ textarea.form-control {
 .block-23 ul, .block-23 ul li {
   padding: 0;
   margin: 0;
-  list-style: none; }
+  list-style: none; 
+  margin-left: auto;
+  margin-right: auto;}
 
 .block-23 ul li, .block-23 ul li > a {
   display: table;
